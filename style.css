@@ -1,0 +1,42 @@
+ body
+   {
+        text-align:center;
+  }
+
+ .button,.button1
+{
+   height:70%;
+   width:20%;
+  border:none;
+  margin:10px;
+ background-color:rgb(164,212,130);
+ border-radius:50px;
+ cursor:pointer;
+}
+
+.button1{
+       height:10%;
+       font-size: 5vh;
+}
+
+#container{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height:40%;
+        justify-content: center;
+}
+
+ .image
+{
+  height:95%;
+  width:90%;
+  border-radius:50px;
+}
+h1{
+       font-size:4vh;
+}
+
+h3{
+       font-size:3vh;
+}

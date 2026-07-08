@@ -7,10 +7,10 @@
         text-align:center;
   }
 
- .button
+ .button,.button1
 {
-   height:150px;
-   width:150px;
+   height:70%;
+   width:20%;
   border:none;
   margin:10px;
  background-color:rgb(164,212,130);
@@ -18,15 +18,36 @@
  cursor:pointer;
 }
 
+.button1{
+       height:10%;
+       font-size: 5vh;
+}
+
+#container{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height:40%;
+        justify-content: center;
+}
+
  .image
 {
-  height:130px;
+  height:100%;
   border-radius:50px;
+}
+h1{
+       font-size:4vh;
+}
+
+h3{
+       font-size:3vh;
 }
 </style>
 </head>
 <body>
        <h1>Bat Ball Stump Game</h1>
+       <div id="container">
        <button class="button" onclick="
         let computerChoice=generateComputerChoice();
         let resultMsg=getResult('Bat',computerChoice);
@@ -44,13 +65,14 @@
         resultMsg=getResult('Stump',computerChoice);
         showResult('Stump',computerChoice,resultMsg);
         "><img src="stump.jpg" alt="Bat image" class="image"></button>
+    </div>
 
     <h3 id="user-move"></h3>   
     <h3 id="computer-move"></h3>
     <h3 id="result"></h3>
     <h3 id="score"></h3>
 
-    <button onclick="localStorage.clear() 
+    <button class="button1" onclick="localStorage.clear() 
             resetScore();     
         ">Reset</button>
 
